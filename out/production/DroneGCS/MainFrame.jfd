@@ -1,0 +1,560 @@
+JFDML JFormDesigner: "6.0.4.0.167" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+			"$alignLeft": true
+			"$alignTop": true
+			"$rowSpecs": "60, 40, 40, 40, 0"
+			"$columnSpecs": "223"
+		} ) {
+			name: "mainPanelCommand"
+			"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+			"background": new java.awt.Color( 255, 255, 255, 255 )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panelCommand"
+				"background": sfield java.awt.Color darkGray
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label34"
+					"text": "Query"
+					"horizontalAlignment": 0
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 1, false )
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 55
+					"y": 10
+					"width": 110
+					"height": 45
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+				"$columnSpecs": "center:76, 146"
+				"$rowSpecs": "center:0:1.0"
+				"$alignLeft": true
+				"$alignTop": true
+			} ) {
+				name: "panel1"
+				"background": &Color0 new java.awt.Color( 255, 255, 255, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Test"
+					"background": #Color0
+					"font": &Font0 new java.awt.Font( "맑은 고딕", 1, 14 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "testCombo"
+					"background": #Color0
+					"model": new javax.swing.DefaultComboBoxModel {
+						selectedItem: "1"
+						addElement( "1" )
+						addElement( "2" )
+						addElement( "3" )
+					}
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 1
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 1
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+				"$columnSpecs": "center:76, 146"
+				"$rowSpecs": "center:0:1.0"
+				"$alignLeft": true
+				"$alignTop": true
+			} ) {
+				name: "panel2"
+				"background": #Color0
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Mission"
+					"background": #Color0
+					"font": #Font0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "missionCombo"
+					"background": #Color0
+					"model": new javax.swing.DefaultComboBoxModel {
+						selectedItem: "1"
+						addElement( "1" )
+						addElement( "2" )
+						addElement( "3" )
+					}
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 1
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 2
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+				"columns": 4
+			} ) {
+				name: "panel3"
+				"background": #Color0
+				add( new FormComponent( "javax.swing.JRadioButton" ) {
+					name: "uav1"
+					"text": "UAV1"
+					"background": #Color0
+					"horizontalAlignment": 0
+					"font": &Font1 new java.awt.Font( "맑은 고딕", 1, 11 )
+					"$buttonGroup": new FormReference( "buttonGroup1" )
+					"selected": true
+				} )
+				add( new FormComponent( "javax.swing.JRadioButton" ) {
+					name: "uav2"
+					"text": "UAV2"
+					"background": #Color0
+					"horizontalAlignment": 0
+					"font": #Font1
+					"$buttonGroup": new FormReference( "buttonGroup1" )
+				} )
+				add( new FormComponent( "javax.swing.JRadioButton" ) {
+					name: "uav3"
+					"text": "UAV3"
+					"background": #Color0
+					"horizontalAlignment": 0
+					"font": #Font1
+					"$buttonGroup": new FormReference( "buttonGroup1" )
+				} )
+				add( new FormComponent( "javax.swing.JRadioButton" ) {
+					name: "uavAll"
+					"text": "ALL"
+					"background": #Color0
+					"horizontalAlignment": 0
+					"font": #Font1
+					"$buttonGroup": new FormReference( "buttonGroup1" )
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 3
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+				"columns": 3
+			} ) {
+				name: "panel4"
+				"background": #Color0
+				add( new FormComponent( "com.jformdesigner.designer.wrapper.HSpacer" ) {
+					name: "hSpacer1"
+					"background": #Color0
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "okButton"
+					"text": "OK"
+					"background": #Color0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "okButtonActionPerformed", true ) )
+				} )
+				add( new FormComponent( "com.jformdesigner.designer.wrapper.HSpacer" ) {
+					name: "hSpacer2"
+					"background": #Color0
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 4
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 225, 225 )
+		} )
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "mainInformation"
+			"background": sfield java.awt.Color white
+			"border": &LineBorder0 new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+				"$columnSpecs": "133, 196"
+				"$rowSpecs": "25, 28, 28, 28, 28, 28, 25, 26, 26, 26, 26, 26, 26, 26, 26"
+				"$vGap": 6
+				"$alignLeft": true
+				"$alignTop": true
+				"$hGap": 4
+			} ) {
+				name: "gPanel21"
+				"background": &Color1 new java.awt.Color( 255, 255, 255, 255 )
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label41"
+					"text": "UAV ID"
+					"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+					"foreground": sfield java.awt.Color darkGray
+					"horizontalAlignment": 0
+					"border": &MatteBorder0 new javax.swing.border.MatteBorder( 0, 0, 1, 0, sfield java.awt.Color black )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"vAlign": 3
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "itextArea1"
+					"font": &SwingDerivedFont1 new com.jformdesigner.model.SwingDerivedFont( "맑은 고딕", 0, 0, false )
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 1
+					"vAlign": 3
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label58"
+					"text": "Index"
+					"font": #SwingDerivedFont0
+					"foreground": sfield java.awt.Color darkGray
+					"horizontalAlignment": 0
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 1
+					"vAlign": 3
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "itextArea18"
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 1
+					"vAlign": 3
+					"gridx": 1
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label42"
+					"text": "Test Time"
+					"font": #SwingDerivedFont0
+					"foreground": sfield java.awt.Color darkGray
+					"horizontalAlignment": 0
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 2
+					"vAlign": 3
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "itextArea2"
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 1
+					"gridy": 2
+					"vAlign": 3
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label43"
+					"text": "Battery"
+					"font": #SwingDerivedFont0
+					"foreground": sfield java.awt.Color darkGray
+					"horizontalAlignment": 0
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 3
+					"vAlign": 3
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "itextArea3"
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 1
+					"gridy": 3
+					"vAlign": 3
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label44"
+					"text": "Latitude"
+					"font": #SwingDerivedFont0
+					"foreground": sfield java.awt.Color darkGray
+					"horizontalAlignment": 0
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 4
+					"vAlign": 3
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "itextArea4"
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 1
+					"gridy": 4
+					"vAlign": 3
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label45"
+					"text": "Longitude"
+					"font": #SwingDerivedFont0
+					"foreground": sfield java.awt.Color darkGray
+					"horizontalAlignment": 0
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 5
+					"vAlign": 3
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "itextArea5"
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 1
+					"gridy": 5
+					"vAlign": 3
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label46"
+					"text": "Altitude"
+					"font": #SwingDerivedFont0
+					"foreground": sfield java.awt.Color darkGray
+					"horizontalAlignment": 0
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 6
+					"vAlign": 3
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "itextArea6"
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 6
+					"gridx": 1
+					"vAlign": 3
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label47"
+					"font": #SwingDerivedFont0
+					"foreground": sfield java.awt.Color darkGray
+					"horizontalAlignment": 0
+					"border": #MatteBorder0
+					"text": "Sat num"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 7
+					"vAlign": 3
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "itextArea7"
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 7
+					"gridx": 1
+					"vAlign": 3
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label48"
+					"text": "Dop"
+					"font": #SwingDerivedFont0
+					"foreground": sfield java.awt.Color darkGray
+					"horizontalAlignment": 0
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 8
+					"vAlign": 3
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "itextArea8"
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 8
+					"gridx": 1
+					"vAlign": 3
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label52"
+					"text": "Roll"
+					"font": #SwingDerivedFont0
+					"foreground": sfield java.awt.Color darkGray
+					"horizontalAlignment": 0
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 9
+					"vAlign": 3
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "itextArea9"
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 9
+					"vAlign": 3
+					"gridx": 1
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label53"
+					"text": "Pitch"
+					"font": #SwingDerivedFont0
+					"foreground": sfield java.awt.Color darkGray
+					"horizontalAlignment": 0
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 10
+					"vAlign": 3
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "itextArea10"
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 10
+					"vAlign": 3
+					"gridx": 1
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label54"
+					"text": "Yaw"
+					"font": #SwingDerivedFont0
+					"foreground": sfield java.awt.Color darkGray
+					"horizontalAlignment": 0
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 11
+					"vAlign": 3
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "itextArea11"
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 11
+					"vAlign": 3
+					"gridx": 1
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label55"
+					"text": "Velocity - North"
+					"font": #SwingDerivedFont0
+					"foreground": sfield java.awt.Color darkGray
+					"horizontalAlignment": 0
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 12
+					"vAlign": 3
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "itextArea12"
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 12
+					"vAlign": 3
+					"gridx": 1
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label56"
+					"text": "Velocity - East"
+					"font": #SwingDerivedFont0
+					"foreground": sfield java.awt.Color darkGray
+					"horizontalAlignment": 0
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 13
+					"vAlign": 3
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "itextArea13"
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 13
+					"vAlign": 3
+					"gridx": 1
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label57"
+					"text": "Velocity - Down"
+					"font": #SwingDerivedFont0
+					"foreground": sfield java.awt.Color darkGray
+					"horizontalAlignment": 0
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 14
+					"vAlign": 3
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "itextArea14"
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 14
+					"vAlign": 3
+					"gridx": 1
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 345
+				"height": 480
+				"x": 10
+				"y": 10
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 479 )
+			"size": new java.awt.Dimension( 370, 495 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "buttonGroup1"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 990 )
+		} )
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "mainVelocity"
+			"background": sfield java.awt.Color white
+			"border": #LineBorder0
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+				"$columnSpecs": "133, 197"
+				"$rowSpecs": "25, 28, 28"
+				"$vGap": 6
+				"$alignLeft": true
+				"$alignTop": true
+				"$hGap": 4
+			} ) {
+				name: "gPanel22"
+				"background": #Color1
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label49"
+					"text": "UAV 1"
+					"font": #SwingDerivedFont0
+					"foreground": sfield java.awt.Color darkGray
+					"horizontalAlignment": 0
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"vAlign": 3
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "itextArea15"
+					"font": #SwingDerivedFont1
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 1
+					"vAlign": 3
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label50"
+					"text": "UAV 2"
+					"font": #SwingDerivedFont0
+					"foreground": sfield java.awt.Color darkGray
+					"horizontalAlignment": 0
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 1
+					"vAlign": 3
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "itextArea16"
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 1
+					"gridy": 1
+					"vAlign": 3
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label51"
+					"text": "UAV 3"
+					"font": #SwingDerivedFont0
+					"foreground": sfield java.awt.Color darkGray
+					"horizontalAlignment": 0
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 2
+					"vAlign": 3
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "itextArea17"
+					"border": #MatteBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 1
+					"gridy": 2
+					"vAlign": 3
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 350
+				"height": 100
+				"x": 10
+				"y": 46
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "평균 속도"
+				"font": new java.awt.Font( "맑은 고딕", 1, 20 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 145
+				"y": 10
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 1051 )
+			"size": new java.awt.Dimension( 365, 159 )
+		} )
+	}
+}
